@@ -6,10 +6,11 @@ import cors from "cors"; // Import the cors package
 import authRoutes from "./Routes/authRoutes.js"
 import msgRoutes from "./Routes/msgRoutes.js"
 import userRoutes from "./routes/user_routes.js";
+import { app,server } from "./socket/socket.js";
 
 import connectMongodb from "./db/connect_db.js";
 
-const app = express();
+
 
 
 const PORT = process.env.PORT || 5000
@@ -28,7 +29,7 @@ app.use("/api/msg", msgRoutes)
 app.use("/api/users", userRoutes);
 
 
-app.listen(PORT, () => {
-    connectMongodb();
-    console.log(`Server Running on Port ${PORT}`)
+server.listen(PORT, () => {
+	connectMongodb();
+	console.log(`Server Running on port ${PORT}`);
 });
