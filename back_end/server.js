@@ -1,6 +1,7 @@
 import express from "express"
 import dotenv from "dotenv"
 import cookieParser from "cookie-parser"
+import cors from "cors"; // Import the cors package
 
 import authRoutes from "./Routes/authRoutes.js"
 import msgRoutes from "./Routes/msgRoutes.js"
@@ -13,6 +14,11 @@ const app = express();
 
 const PORT = process.env.PORT || 5000
 dotenv.config();
+
+app.use(cors({
+    origin: 'http://localhost:3000', // Replace with frontend's origin
+    credentials: true, // Allow cookies to be sent with requests
+}));
 
 app.use(express.json());
 app.use(cookieParser());

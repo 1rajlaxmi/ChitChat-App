@@ -1,5 +1,5 @@
-import Conversations from "./Conversations";
-//import LogoutButton from "./LogoutButton";
+import Conversations from "./Conversations.jsx";
+import LogoutButton from "./LogoutButton.jsx";
 import Search from "./Search";
 
 const Sidebar = () => {
@@ -8,7 +8,7 @@ const Sidebar = () => {
 			<Search />
 			<div className='divider px-3'></div>
 			<Conversations />
-			{/* <LogoutButton /> */}
+			{ <LogoutButton /> }
 		</div>
 	);
 };
