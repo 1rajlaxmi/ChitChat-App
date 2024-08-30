@@ -3,6 +3,7 @@ This is a real-time chat application built using React, Express, and WebSocket. 
 
 ## Features
 - **User Authentication:** Secure login and registration system.
+- **Logout:** Logout feature allows users to securely log out of their account.
 - **Welcome Page:** Personalized welcome page after login.
 - **Real-time Messaging:** Instant messaging with WebSocket technology.
 - **Private Chat:** Chat with other users privately.
