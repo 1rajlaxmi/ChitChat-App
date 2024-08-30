@@ -1,4 +1,4 @@
-import useConversation from "../../zustand/useConversation.js";
+import useConversation from "../../Zustand/useConversation.js";
 import { useSocketContext } from "../../context/SocketContext";
 
 const Conversation = ({ conversation, lastIdx, emoji }) => {
