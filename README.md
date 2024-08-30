@@ -20,3 +20,8 @@ This is a real-time chat application built using React, Express, and WebSocket. 
 - **Authentication:** JWT (JSON Web Tokens)
 - **State Management:** React Context API
 - **Environment Variables:** dotenv
+
+## Screenshots
+### Signup Page
+![Signup Page](front_end/src/assets/img/signup.png) 
+
