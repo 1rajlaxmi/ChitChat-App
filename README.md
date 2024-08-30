@@ -25,3 +25,15 @@ This is a real-time chat application built using React, Express, and WebSocket. 
 ### Signup Page
 ![Signup Page](front_end/src/assets/img/signup.png) 
 
+### Login Page
+![Login Page](front_end/src/assets/img/login.png) 
+
+### Welcome Page
+
+![Welcome Page](front_end/src/assets/img/welcome.png)
+
+### Chat Interface
+
+![Chat Interface](front_end/src/assets/img/chats.png)
+![Chat Interface](front_end/src/assets/img/chat_dis.png)
+
