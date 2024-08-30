@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect, useContext } from "react";
-import { useAuthContext } from "./AuthContext";
+import { useAuthContext } from "./AuthContext.jsx";
 import io from "socket.io-client";
 
 const SocketContext = createContext();
@@ -15,9 +15,9 @@ export const SocketContextProvider = ({ children }) => {
 
 	useEffect(() => {
 		if (authUser) {
-			const socket = io("http://localhost:5000 ", {
-				transports: ['websocket'],
-				timeout: 20000, // 20 seconds	
+			const socket = io("http://localhost:5000/", {
+				transports: ['websocket','polling'],
+				//timeout: 20000, // 20 seconds	
 				query: {
 					userId: authUser._id,
 				},
