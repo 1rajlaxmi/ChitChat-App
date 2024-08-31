@@ -34,7 +34,9 @@ This is a real-time chat application built using React, Express, and WebSocket. 
 ![Welcome Page](front_end/src/assets/img/welcome.png)
 
 ### Chat Interface
-
+#### Chat between two users
 ![Chat Interface](front_end/src/assets/img/chats.png)
+
+#### user chat interface
 ![Chat Interface](front_end/src/assets/img/chat_dis.png)
 
